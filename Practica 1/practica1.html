@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primera Practica HTML</title>
+</head>
+<body>
+    <h1>Este es un encabezado grandote</h1><br>
+ 
+<ul>
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+</ul>
+</br>
+ 
+<section>
+    <article>
+        Esto es un párrafo normal
+        
+    </article>
+    
+    <article>
+        Imagen 1 <br>
+        <img src="https://lh3.googleusercontent.com/wA3R9zzDXh-Fc9clFDYvPMmnuejcqtIK9b2x5_eAphJb_EwMYuPA7pLbioka_xKdNung73UH_JqzYQ=w544-h544-p-l90-rj" alt="duki" width="200">
+        <br>
+        Imagen 2 <br>
+        <img src="./dflm.jpg" alt="Desde el fin del mundo" width="200">
+    </article>
+    
+    <article>
+        Video 1 <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/2BrWQ9ruZEo?si=tPDmllQGFTcHJeWj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <br>
+        Audio 2 <br>
+        <audio controls>
+            <source src="sudor y trabajo.mp3.mp3" type="audio/mpeg">
+          </audio>
+          
+    </article>
+
+    <article>
+        <form action="#" method="post">
+            <!-- Nombre -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br>
+            <!-- Correo Electrónico -->
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+            <br>
+            <!-- Tiempo -->
+            <label for="tiempo">Tiempo (HH:MM):</label>
+            <input type="time" id="tiempo" name="tiempo" required>
+            <br>
+            <!-- Fecha de Nacimiento -->
+            <label for="fecha">Fecha de nacimiento:</label>
+            <input type="date" id="fecha" name="fecha" required>
+            <br>
+            <!-- Mes -->
+            <label for="mes">Mes de nacimiento:</label>
+            <input type="month" id="mes" name="mes" required>
+            <br>
+            <!-- Semana de nacimiento -->
+            <label for="semana">Semana del año:</label>
+            <input type="week" id="semana" name="semana" required>
+            <br>
+            <!-- Número menor de 10 -->
+            <label for="menor10">Número menor de 10:</label>
+            <input type="number" id="menor10" name="menor10" min="0" max="9" required>
+            <br>
+            <!-- Número mayor de 10 -->
+            <label for="mayor10">Número mayor de 10:</label>
+            <input type="number" id="mayor10" name="mayor10" min="11" required>
+            <br>
+            <!-- Rango -->
+            Intervalo (min 0, max 10):
+             <input type="range" name="range_control" min="0" max="10" value="0" oninput="range_control_value.value = this.value" />
+             <output name="range_control_value">0</output>
+            <br /> 
+            <!-- Número de teléfono -->
+            <label for="telefono">Número de teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" placeholder="1234567890" required>
+            <br>
+            <!-- Búsqueda por color -->
+            <label for="color">Buscar por color:</label>
+            <input type="color" id="color" name="color">
+            <br />
+            
+            <!-- Búsqueda por color -->
+            Término de búsqueda: <input type="search" name="search_control" />
+           
+            <!-- Botón de envío -->
+            <input type="submit" value="Enviar" class="submit-btn">
+        </form>
+    </article>
+</section>
+ 
+<footer> Este es el pie de mi página web</footer>
+</body>
+ 
+</html>
